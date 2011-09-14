@@ -1,0 +1,20 @@
+out_to_console yes
+out_to_x no
+background no
+update_interval 1
+total_run_times 0
+use_spacer none
+overwrite_file /tmp/nathanael-conky
+
+TEXT
+
+\\#BD7EFF\Kernel\\#D4D4D4\ ${kernel} | \
+\\#BD7EFF\Uptime\\#D4D4D4\ ${uptime} | \
+\\#BD7EFF\Root\\#D4D4D4\ ${fs_free /} | \
+\\#BD7EFF\Home\\#D4D4D4\ ${fs_free /home} | \
+\\#BD7EFF\Portage\\#D4D4D4\ ${fs_free /usr/portage} | \
+\\#BD7EFF\Down\\#D4D4D4\ ${downspeedf wlan0} | \
+\\#BD7EFF\Up\\#D4D4D4\ ${upspeedf wlan0} | \
+\\#BD7EFF\Cpu\\#D4D4D4\ ${cpu 0}% | \
+\\#BD7EFF\Mem\\#D4D4D4\ ${memperc}% | \
+\\#BD7EFF\Wifi\\#D4D4D4\ ${wireless_link_qual_perc wlan0}%
