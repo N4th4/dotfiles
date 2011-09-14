@@ -32,14 +32,6 @@ setopt correctall
 autoload -U colors
 colors
 
-BLACK="%{"$'\033[01;30m'"%}"
-GREEN="%{"$'\033[01;32m'"%}"
-RED="%{"$'\033[01;31m'"%}"
-YELLOW="%{"$'\033[01;33m'"%}"
-BLUE="%{"$'\033[01;34m'"%}"
-BOLD="%{"$'\033[01;39m'"%}"
-NORM="%{"$'\033[00m'"%}"
-
 setopt transient_rprompt # remove the RPS1 after hit enter
 export PS1="%n%B@%b%m %{$fg[red]%}%~ %{$reset_color%}%% "
 
